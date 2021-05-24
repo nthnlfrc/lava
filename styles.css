@@ -1,0 +1,40 @@
+
+div {
+    width: 400px;
+    height: 400px;
+}
+
+.lava {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: teal;
+    animation-name: lava;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes lava {
+    from {
+        transform: rotate(0deg);
+        background-color: red;
+        border-radius: 90% 50%;
+    }
+
+    50% {
+        background-color: orange;
+        border-radius: 40% 90%;
+    }
+
+    to {
+        transform: rotate(360deg);
+        background-color: red;
+        border-radius: 90% 50%;
+        
+    }
+}
